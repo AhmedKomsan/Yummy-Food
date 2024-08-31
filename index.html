@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Yummy</title>
+  </head>
+
+  <body>
+    <div
+      class="loading-screen position-fixed top-0 start-0 end-0 bottom-0 bg-black text-white justify-content-center align-items-center"
+    >
+      <i class="fa fa-spinner fa-spin fa-5x"></i>
+    </div>
+    <i
+      class="fa-solid fa-arrow-left fa-3x text-white"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasRight"
+      aria-controls="offcanvasRight"
+    ></i>
+
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <i
+          id
+          type="button"
+          class="fa-solid fa-arrow-right fa-3x text-white"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></i>
+      </div>
+      <div
+        class="offcanvas-body nav-header d-flex flex-column justify-content-between"
+      >
+        <div class="nav-links">
+          <ul class="p-4 links overflow-hidden">
+            <li
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+              onclick="showSearch()"
+              class="p2 position-relative"
+            >
+              Search
+            </li>
+            <li
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+              onclick="getCategories()"
+              class="p2 position-relative"
+            >
+              categories
+            </li>
+            <li
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+              onclick="getArea()"
+              class="p2 position-relative"
+            >
+              Area
+            </li>
+            <li
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+              onclick="getIngredients()"
+              class="p2 position-relative"
+            >
+              Ingredients
+            </li>
+            <li
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+              onclick="showContact()"
+              class="p2 position-relative"
+            >
+              Countact Us
+            </li>
+          </ul>
+        </div>
+        <div class="nav-footer p-4">
+          <div class="icons text-white">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <div class="footer-data text-white">
+            <p>
+              Copyright Â© 2019 All Rights <br />
+              Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="searchPage" class="row py-4"></div>
+    </div>
+
+    <div class="container">
+      <div class="row text-white py-5 g-4" id="rowData"></div>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
