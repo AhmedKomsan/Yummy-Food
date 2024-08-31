@@ -1,0 +1,158 @@
+body {
+  padding: 0;
+  margin: 0;
+  /* overflow: hidden !important; */
+  overflow-x: hidden;
+  background-color: #0d0d0d;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+li {
+  list-style: none;
+  padding: 8px 0px;
+  color: white;
+}
+
+.fa-arrow-left {
+  position: fixed;
+  right: 0;
+  z-index: 999;
+  top: 50%;
+}
+
+.offcanvas {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #0d0d0d;
+  width: 17% !important;
+}
+.offcanvas-header i {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  color: white;
+}
+
+.offcanvas ul li {
+  cursor: pointer;
+}
+
+.offcanvas ul li.animated {
+  /* animation: slideIn 0.5s ease-in-out; */
+  animation: reverse 1s ease-in-out;
+}
+
+/* meal layers */
+
+.meal {
+  border-radius: 5px;
+}
+
+.meal-layer {
+  width: 100%;
+  height: 100%;
+  background-color: #f9f9f9a9;
+  top: 100%;
+  transition: 0.5s;
+}
+
+.meal:hover .meal-layer {
+  top: 0;
+}
+
+/* meal info */
+.alert {
+  width: fit-content;
+}
+
+/* loading screen */
+.loading-screen {
+  z-index: 999999;
+  display: flex;
+}
+
+.inner-loading-screen {
+  position: absolute;
+  z-index: 99;
+  background-color: #0d0d0d;
+  display: flex;
+}
+
+/* media query */
+@media only screen and (max-width: 280px) {
+  .offcanvas {
+    width: 57% !important;
+  }
+}
+
+@media only screen and (min-width: 281px) {
+  .offcanvas {
+    width: 50% !important;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 418px) {
+  .offcanvas {
+    width: 40% !important;
+  }
+}
+
+@media only screen and (min-width: 740px) {
+  .offcanvas {
+    width: 40% !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #searchPage div {
+    margin-bottom: 10px;
+  }
+  #area {
+    width: 50%;
+  }
+  #ingredients {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .offcanvas {
+    width: 40% !important;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 800px) {
+  .offcanvas {
+    width: 38% !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #img {
+    width: 50%;
+  }
+  #instructions {
+    width: 50%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1000px) {
+  .offcanvas {
+    width: 30% !important;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1400px) {
+  .offcanvas {
+    width: 20% !important;
+  }
+}
